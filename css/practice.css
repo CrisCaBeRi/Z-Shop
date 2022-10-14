@@ -1,0 +1,125 @@
+/*flexbox 
+
+row: de izquierda a derecha.
+row-reverse: de derecha a izquierda.
+column: de arriba abajo.
+column-reverse: de abajo a arriba.
+
+justify-content:
+
+flex-start: justificado a la izquierda
+flex-end: justificado a la derecha
+center: justificado en el centro
+space-around: distribuye uniformemente el espacio alrededor de las cajas
+space-between: distribuye uniformemente el espacio entre las cajas
+
+flex-direction:
+
+row: de izquierda a derecha
+row-reverse: de derecha a izquierda
+column: de arriba abajo
+column-reverse: de abajo a arriba
+
+
+align-items
+
+center: los objetos se centran.
+flex-start: los objetos se ajustan al borde superior.
+flex-end: los objetos se ajustan al borde inferior.
+stretch: los objetos se muestran con el mismo tamaño.
+baseline: los objetos se organizan en la línea de base (según el contenido).
+
+flex-wrap
+
+nowrap: sin salto de línea
+wrap: salto de línea
+wrap-reverse: salto de línea (ordenado a la inversa)
+
+grid
+
+grid-template-columns
+grid-template-rows
+grid-template-areas
+grid-template (en-US)
+grid-auto-columns
+grid-auto-rows
+grid-auto-flow (en-US)
+grid
+grid-row-start (en-US)
+grid-column-start (en-US)
+grid-row-end (en-US)
+grid-column-end (en-US)
+grid-row (en-US)
+grid-column (en-US)
+grid-area (en-US)
+row-gap (en-US)
+column-gap
+gap*/ 
+
+/*General*/
+.wrap-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+
+.zerogrid {
+    width: 1000px;
+}
+
+/*Menú*/
+.main-header .row {
+    display: flex;
+    justify-content: space-between;    
+}
+
+/*Contenedores_imagenes*/
+.row .col-2-5 {
+    width: 60%;
+    float: left;
+}
+.row .col-3-5 {
+    width: 40%;
+    float: left;
+}
+.row .col-1-2{
+    width: 50%;
+    float: left;
+}
+
+/*Caja texto - botón*/
+.wrap-col .box-text{
+    width: 480px;
+}
+
+/*Footer*/
+.wrap-footer .row {
+    display: flex;    
+    justify-content: space-between;
+}
+
+.wrap-footer .wrap-col {
+    width: 270px;   
+}
+
+.wrap-col .row {
+    display: flex;
+    flex-direction: column;
+} 
+
+/*BLOG
+Ajuste pra definir 50% de tamaño de imagen y el otro 50% lo toma automaticamente el texto */
+
+.flex-box .col-1-2 {
+    width: 50%;}
+
+/*Contact*/
+.contact-form .t-center{
+    padding-top: 50px;}
+
+.contact-form .col-1-3 {
+    width: 33%;/*divide el espacio de cada inputs*/
+    display: inline-block;}
+
+
+
